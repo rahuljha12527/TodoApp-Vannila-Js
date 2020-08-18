@@ -73,6 +73,12 @@ function filterTodo(e) {
           todo.style.display = "none";
         }
         break;
+       case "uncompleted":
+         if(!todo.classList.contains('completed')){
+           todo.style.display="flex";
+         }else {
+          todo.style.display = "none";
+        } 
       default:
         break;
     }
